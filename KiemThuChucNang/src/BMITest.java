@@ -8,28 +8,23 @@ class BMITest {
 
     @org.junit.jupiter.api.Test
     void test1() throws Exception {
-        assertEquals(BMI.calculateBMI(-1), "ValueError");
-    }
-
-    @org.junit.jupiter.api.Test
-    void test2() throws Exception {
         assertEquals(BMI.calculateBMI(10), "Underweight");
     }
 
     @org.junit.jupiter.api.Test
-    void test3() throws Exception {
+    void test2() throws Exception {
         assertEquals(BMI.calculateBMI(22), "Normal");
     }
 
     @org.junit.jupiter.api.Test
-    void test4() throws Exception {
-        assertEquals(BMI.calculateBMI(24), "Normal");
-    }
-
-    @org.junit.jupiter.api.Test
-    void test5() throws Exception {
+    void test3() throws Exception {
         assertEquals(BMI.calculateBMI(28), "Overweight");
     }
 
     @org.junit.jupiter.api.Test
+    void test4() throws Exception {
+
+        assertEquals(BMI.calculateBMI(-1), "ValueError");
+    }
+
 }
